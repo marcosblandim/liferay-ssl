@@ -1,8 +1,12 @@
 # Wildfly Local HTTPS
 How to setup local HTPPS on a Wildfly server
 
+## References
+- <https://web.dev/how-to-use-local-https>
+- <https://github.com/FiloSottile/mkcert#installation>
+
 ## Local certification
-- following steps ate a summary of [this article](https://web.dev/how-to-use-local-https/)
+- following steps ate a summary of [this article](https://web.dev/how-to-use-local-https)
 1. install [mkcert](https://github.com/FiloSottile/mkcert#installation)
 2. execute the following command to generate a local certificate authority (CA)
 ```bash
