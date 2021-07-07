@@ -1,8 +1,8 @@
 # Liferay SSL
-How to setup HTPPS on Liferay
+How to setup locally HTPPS on Liferay with Wildfly server
 
 ## Local certification
-- a summary of [this article](https://web.dev/how-to-use-local-https/)
+- following steps ate a summary of [this article](https://web.dev/how-to-use-local-https/)
 1. install [mkcert](https://github.com/FiloSottile/mkcert#installation)
 2. execute the following command to generate a local certificate authority (CA)
 ```bash
@@ -17,7 +17,7 @@ mkcert localhost
 5. keep both files generate in the previous step somewhere easy to find, as they'll be used [here](#configure-wildfly)
 
 ## Configure Wildfly
-- a summary of [this article](https://medium.com/@hasnat.saeed/setup-ssl-https-on-jboss-wildfly-application-server-fde6288a0f40)
+- following steps ate a summary of [this article](https://medium.com/@hasnat.saeed/setup-ssl-https-on-jboss-wildfly-application-server-fde6288a0f40)
 1. navigate to ```<wildfly_folder>/standalone/configuration```
 2. execute the following command with the two .pem files generated [here](#local-certification)
 ```bash
