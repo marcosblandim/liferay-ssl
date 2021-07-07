@@ -1,5 +1,5 @@
-# Liferay SSL
-How to setup local HTPPS on a Liferay a Wildfly server
+# Wildfly Local HTTPS
+How to setup local HTPPS on a Wildfly server
 
 ## Local certification
 - following steps ate a summary of [this article](https://web.dev/how-to-use-local-https/)
@@ -58,4 +58,4 @@ openssl pkcs12 -export -out wildfly-pkcs12.pfx -in localhost.pem -inkey localhos
     </subsystem>
     ```
 6. start/restart your Wildfly server
-7. you can access you Liferay portal via HTTPS in <https://localhost:8443>
+7. you can access you site via HTTPS in <https://localhost:8443>
