@@ -1,5 +1,5 @@
 # Liferay SSL
-How to setup locally HTPPS on Liferay with Wildfly server
+How to setup local HTPPS on a Liferay a Wildfly server
 
 ## Local certification
 - following steps ate a summary of [this article](https://web.dev/how-to-use-local-https/)
