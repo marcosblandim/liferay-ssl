@@ -4,6 +4,7 @@ How to setup local HTPPS on a Wildfly server
 ## References
 - <https://web.dev/how-to-use-local-https>
 - <https://github.com/FiloSottile/mkcert#installation>
+- <https://medium.com/@hasnat.saeed/setup-ssl-https-on-jboss-wildfly-application-server-fde6288a0f40>
 
 ## Local certification
 - following steps ate a summary of [this article](https://web.dev/how-to-use-local-https)
