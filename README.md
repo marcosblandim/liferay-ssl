@@ -11,20 +11,20 @@ How to setup local HTPPS on a Wildfly server
 1. install [mkcert](https://github.com/FiloSottile/mkcert#installation)
 2. execute the following command to generate a local certificate authority (CA)
 ```bash
-mkcert -install # add mkcert to your local root CAs
+mkcert -install # it adds mkcert to your local root CAs
 ```
 3. restart your browser
-4. execute the following command to create 2 .pem files: ```localhost.pem``` and ```localhost-key.pem```
+4. navigate to ```<wildfly_folder>/standalone/configuration``` 
+5. execute the following command to create 2 .pem files: ```localhost.pem``` and ```localhost-key.pem```
 ```
 mkcert localhost
 ```
 > the command above also signs this certificate
-5. keep both files generate in the previous step somewhere easy to find, as they'll be used [here](#configure-wildfly)
 
 ## Configure Wildfly
 - following steps are a summary of [this article](https://medium.com/@hasnat.saeed/setup-ssl-https-on-jboss-wildfly-application-server-fde6288a0f40)
 1. navigate to ```<wildfly_folder>/standalone/configuration```
-2. execute the following command with the two .pem files generated [here](#local-certification)
+2. execute the following command with the two .pem files generated in the [previous topic](#local-certification)
 ```bash
 openssl pkcs12 -export -out wildfly-pkcs12.pfx -in localhost.pem -inkey localhost-key.pem
 ```
