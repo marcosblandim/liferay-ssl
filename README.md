@@ -31,7 +31,7 @@ openssl pkcs12 -export -out wildfly-pkcs12.pfx -in localhost.pem -inkey localhos
 > this will generate the file ```wildfly-pkcs12.pfx```
 3. type a password
 4. make the following changes to your Wildfly's ```standalone.xml``` file
-    1. add the above <security-realm> to the <security-realms> element; remenber to replace ```<your-password>``` with the password typed [previous topic](#local-certification)
+    1. add the above ```<security-realm>``` to the ```<security-realms>``` element; remenber to replace ```<your-password>``` with the password typed [previous topic](#local-certification)
     ```bash
     <security-realm name="UndertowRealm">
       <server-identities>
